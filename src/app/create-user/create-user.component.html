@@ -1,0 +1,23 @@
+<form>
+    <div class="form-group col-xs-6">
+        <label for="fName">First Name</label>
+        <input name="firstName" class="form-control" [(ngModel)]="userObj.firstName" id="fName" type="text">
+    </div>
+    <div class="form-group col-xs-6">
+        <label for="lName">Last Name</label>
+        <input name="lastName" class="form-control" [(ngModel)]="userObj.lastName" id="lName" type="text">
+    </div>
+    <div class="form-group col-xs-6">
+        <label for="phone">Phone Number</label>
+        <input name="phoneNumber" class="form-control" [(ngModel)]="userObj.phoneNumber" id="phone" type="text">
+    </div>
+    <div class="form-group col-xs-6">
+        <label for="email">Email</label>
+        <input name="emailId" class="form-control" [(ngModel)]="userObj.email" id="email" type="text">
+    </div>
+    <div class="form-group col-xs-6">
+        <label for="image">Image</label>
+        <input (change)="fileChangeEvent($event)" type="file" placeholder="image">
+    </div>
+    <button type="submit" (click)="saveUser()" class="btn btn-primary">Submit</button>
+</form>
