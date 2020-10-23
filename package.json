@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vamsikrishna-origa/test-angular.git"
+    "url": "git+https://github.com/vamsikrishna-origa/test-angular.git"
 },
   "scripts": {
     "ng": "ng",
